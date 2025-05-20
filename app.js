@@ -56,7 +56,7 @@ const app = () => {
     song.ontimeupdate = () => {
         let currentTime = song.currentTime;
         let elapsed = fakeDuration - currentTime;
-        let seconds = Math.floor(elapsed % 60);
+        let seconds = Math.floor(elapsed % 60) < 10 ? '0'+ Math.floor(elapsed % 60) : Math.floor(elapsed % 60);
         let minutes = Math.floor(elapsed / 60);
         let progress = outlineLength - (currentTime/fakeDuration) * outlineLength;
         outline.style.strokeDashoffset = progress;
