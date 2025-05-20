@@ -29,6 +29,15 @@ const app = () => {
         option.addEventListener("click", function(){
             fakeDuration = this.getAttribute("data-time");
             timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(fakeDuration % 60)}`;
+        
+            song.pause();
+            song.currentTime = 0;
+            video.pause();
+            video.currentTime = 0;
+            outline.style.strokeDashoffset = outlineLength;
+            play.src = "./svg/play.svg";
+        
+            checkPlaying(song);
         });
     });
 
