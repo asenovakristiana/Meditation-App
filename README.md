@@ -1,3 +1,5 @@
+IN MY STYLE.CSS IS THE RIGHT POSITION OF PLAY BUTTON
+
 https://dev.to/simonholdorf/9-awesome-projects-you-can-build-with-vanilla-javascript-2o1b#chapter-1
 
 "JavaScript Projects
